@@ -1,10 +1,10 @@
-:root{
+:root {
     --main-text-color: #F9FAF8;
     --secondary-text-color: #E5E7EB;
     --dark-background: #1F2937;
     --button-color: #3882F6;
-
 }
+
 /* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
@@ -18,20 +18,35 @@ body {
 
 /* End Global Rules */
 
+/* Start Container */
+
+.container {
+    margin: 0 auto;
+}
+
+/* Large */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Container */
+
 /* Start Header */
-.header {
+.header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header .links{
+.header .links {
     display: flex;
     gap: 20px;
     list-style: none;
 }
 
-.header .links a{
+.header .links a {
     text-decoration: none;
 }
 
