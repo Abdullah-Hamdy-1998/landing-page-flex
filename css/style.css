@@ -3,6 +3,10 @@
     --secondary-text-color: #E5E7EB;
     --dark-background: #1F2937;
     --button-color: #3882F6;
+    --main-text-size: 48px;
+    --secondary-text-size: 18px;
+    --logo-text-size: 24px;
+    --quote-text-size: 36px
 }
 
 /* Start Global Rules */
@@ -24,7 +28,24 @@ body {
     margin: 0 auto;
 }
 
+/* Small */
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
 /* Large */
+
 @media (min-width: 1200px) {
     .container {
         width: 1170px;
@@ -34,19 +55,31 @@ body {
 /* End Container */
 
 /* Start Header */
+body {
+    background-color: var(--dark-background);
+}
+
 .header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.logo h3 {
+    font-size: var(--logo-text-size);
+    color: var(--main-text-color);
+}
+
 .header .links {
     display: flex;
     gap: 20px;
     list-style: none;
+
 }
 
 .header .links a {
+    font-size: var(--secondary-text-size);
+    color: var(--secondary-text-color);
     text-decoration: none;
 }
 
