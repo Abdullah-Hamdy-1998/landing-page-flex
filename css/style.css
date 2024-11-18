@@ -1,3 +1,10 @@
+:root{
+    --main-text-color: #F9FAF8;
+    --secondary-text-color: #E5E7EB;
+    --dark-background: #1F2937;
+    --button-color: #3882F6;
+
+}
 /* Start Global Rules */
 * {
     -webkit-box-sizing: border-box;
