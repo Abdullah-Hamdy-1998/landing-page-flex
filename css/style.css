@@ -270,3 +270,10 @@ body {
 }
 
 /* End Contact */
+/* Start Footer */
+.footer p{
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 25px 0;
+}
+/* End Footer */
